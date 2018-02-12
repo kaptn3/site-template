@@ -87,7 +87,7 @@ h6 { font-size: 1rem; }
 /* Columns
    ========================================================================== */
 /*
- * If need column example width 3 of 12 then create class col-3 width 25%  
+ * If need column example width 3 of 12 then create class col-3 max-width 25%  
  */
 .row {
   display: flex;
@@ -97,18 +97,12 @@ h6 { font-size: 1rem; }
 }
 
 .col {
+  border: 1px solid rgba(86,61,124,.2); /* delete */
   flex-basis: 0;
   flex-grow: 1;
-  width: 100%;
   max-width: 100%;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  background-color: rgba(86,61,124,.15);
-  border: 1px solid rgba(86,61,124,.2);
+  padding-top: .75rem 15px;
   position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 /* Header */

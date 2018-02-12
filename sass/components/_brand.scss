@@ -1,0 +1,26 @@
+.mast-brand {
+  width: 100%;
+  display: block;
+}
+.mast-brand .container {  
+  display: flex;
+  align-items: center;
+  height: 124px;
+  justify-content: space-between;
+}
+.brand a {
+  color: var(--base-color);
+}
+.brand a:hover,
+.brand a:active {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .mast-brand {
+    padding-bottom: 1.25rem;
+  }
+  .mast-brand .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,41 @@
+.main-menu {
+  width: 100%;
+  display: block;
+}
+.main-menu {
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: var(--base-color);
+  width: 100%;
+}
+.navbar {
+  margin-left: -15px; /* сброс падинг от ссылок */
+}
+nav ul {
+  list-style: none; /* убираем маркеры */
+  margin: 0; /* убираем системые отступы */
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap; /* если не помещается, то переход на новую строку */
+  justify-content: flex-start;
+}
+.nav-item a {
+  display: block;
+  color: #fff;
+  padding: 15px;
+}
+.nav-item a:hover,
+.nav-item a:active {
+  text-decoration: none;
+  background-color: #222;
+}
+@media (max-width: 768px) {
+  .main-menu .container {
+    padding: 0;
+  }
+  .navbar ul {
+    flex-flow: column wrap;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}

@@ -1,13 +1,15 @@
 /* Global */
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-} 
-
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+} 
+
+html {
+  font-size: 16px;
 }
 
 :root {
@@ -18,6 +20,7 @@ body {
 a {
   text-decoration: none;
   color: var(--grey-color);
+  transition: .5s all ease;
 }
 
 a:hover,
@@ -28,7 +31,6 @@ a:active {
 }
 
 img {
-  border: 0;
   vertical-align: middle;
 }
 
@@ -37,35 +39,77 @@ div {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
 }
 
+
 h1,h2,h3,h4,h5,h6 {
-  margin: 0 0 15px;
+  margin: 0 0 .5rem 0;
+  line-height: 1.2;
 }
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 100%;
-  display: block;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    max-width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    max-width: 970px;
   }
 }
-@media (min-width:1200px){
+@media (min-width: 1200px) {
   .container { 
-    width:1170px
+    max-width: 1170px
   }
 }
 
+/* Columns
+   ========================================================================== */
+/*
+ * If need column example width 3 of 12 then create class col-3 width 25%  
+ */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /* Header */
 
@@ -74,13 +118,8 @@ nav ul {
   margin: 0; /* убираем системые отступы */
   padding: 0;
   display: flex;
-  flex-flow: row wrap; /**/
+  flex-flow: row wrap; /* если не помещается, то переход на новую строку */
   justify-content: flex-start;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 15px 10px 0; 
 }
 
 header,
@@ -108,14 +147,15 @@ header,
 
 .main-menu {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: var(--base-color);
   width: 100%;
 }
 
 .nav-item a {
+  display: block;
   color: #fff;
-  padding: 21px 20px;
+  padding: 15px;
 }
 
 .nav-item a:hover,
@@ -130,7 +170,7 @@ header,
     justify-content: space-around;
   }
   .mast-brand {
-    padding-bottom: 30px;
+    padding-bottom: 1.25rem;
   }
   .mast-brand .container {
     justify-content: center;

@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/* 
+*
+  ========================================================================== 
+  Styles
+  ========================================================================== 
+*
+*/
 :root {
   --base-color: #1abc9c;
   --grey-color: #888; }
@@ -306,6 +313,8 @@ template {
   box-sizing: border-box; }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle; }
 
 html {
@@ -314,16 +323,10 @@ html {
 div {
   display: block; }
 
-/* 
-*
-  ========================================================================== 
-  Styles
-  ========================================================================== 
-*
-*/
-:root {
-  --base-color: #1abc9c;
-  --grey-color: #888; }
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer; }
 
 body {
   font-family: Helvetica, sans-serif; }

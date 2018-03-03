@@ -9,15 +9,18 @@
   width: 100%;
 }
 .navbar {
-  margin-left: -15px; /* сброс падинг от ссылок */
+  margin-left: -15px; // сброс падинг от ссылок
 }
 nav ul {
-  list-style: none; /* убираем маркеры */
-  margin: 0; /* убираем системые отступы */
+  list-style: none; // убираем маркеры 
+  margin: 0; // убираем системые отступы
   padding: 0;
   display: flex;
-  flex-flow: row wrap; /* если не помещается, то переход на новую строку */
+  flex-flow: row wrap; // если не помещается, то переход на новую строку
   justify-content: flex-start;
+}
+nav ul li {
+  padding: 0;
 }
 .nav-item a {
   display: block;

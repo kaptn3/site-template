@@ -395,10 +395,6 @@ a:active {
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px; } }
-header {
-  width: 100%;
-  display: block; }
-
 /* Columns
    ========================================================================== */
 /*
@@ -410,14 +406,23 @@ header {
   margin-right: -15px;
   margin-left: -15px; }
 
-.col {
+.col,
+.row > [class^=col-] {
   border: 1px solid rgba(86, 61, 124, 0.2);
   /* delete */
   flex-basis: 0;
   flex-grow: 1;
-  max-width: 100%;
   padding: .75rem 15px;
   position: relative; }
+
+.col-1 {
+  -webkit-box-flex: 0;
+  flex: 0 0 66.666667%;
+  max-width: 8.33333%; }
+
+header {
+  width: 100%;
+  display: block; }
 
 .mast-brand {
   width: 100%;

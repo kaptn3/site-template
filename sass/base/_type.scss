@@ -31,10 +31,11 @@ a {
   text-decoration: none;
   color: var(--grey-color);
   transition: .5s all ease;
+  cursor: pointer;
+  //border-bottom: 1px dotted transparent;
 }
 a:hover,
 a:active {
-  text-decoration: underline;
   color: var(--base-color);
-  cursor: pointer;
+  //border-bottom: 1px dotted;
 }

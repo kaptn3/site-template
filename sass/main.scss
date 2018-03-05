@@ -1,11 +1,11 @@
 @charset 'UTF-8';
 
 @import
-  'abstracts/root',
-  'abstracts/variables';
+  'vendor/normalize';
 
 @import
-  'vendor/normalize';
+  'abstracts/root',
+  'abstracts/variables';
 
 @import
   'base/reset',

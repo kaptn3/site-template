@@ -297,27 +297,24 @@ template {
 [hidden] {
   display: none; }
 
-/* 
-*
-  ========================================================================== 
-  Styles
-  ========================================================================== 
-*
-*/
 :root {
-  --base-color: #1abc9c;
-  --grey-color: #888; }
+  --blue: #5780a8; }
 
 * {
   box-sizing: border-box; }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   vertical-align: middle; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: sans-serif; }
+
+body {
+  width: 100%;
+  min-width: 320px; }
 
 div {
   display: block; }
@@ -327,35 +324,19 @@ button {
   border: 0;
   cursor: pointer; }
 
-body {
-  font-family: Helvetica, sans-serif; }
+a {
+  cursor: pointer;
+  text-decoration: none; }
 
-html {
-  font-size: 16px; }
+a:visited,
+a:active,
+a:hover,
+a:focus {
+  color: inherit; }
 
 p {
-  margin: 0 0 1rem 0;
-  font-size: 1rem;
   line-height: 1.5;
-  color: #212529; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 1.75rem; }
-
-h4 {
-  font-size: 1.5rem; }
-
-h5 {
-  font-size: 1.25rem; }
-
-h6 {
-  font-size: 1rem; }
+  margin: 0 0 1rem; }
 
 h1,
 h2,
@@ -363,127 +344,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 .5rem 0;
-  line-height: 1.2; }
+  margin: 0; }
 
-a {
-  text-decoration: none;
-  color: var(--grey-color);
-  transition: .5s all ease;
-  cursor: pointer; }
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none; }
 
-a:hover,
-a:active {
-  color: var(--base-color); }
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%; }
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px; } }
-@media (min-width: 768px) {
-  .container {
-    max-width: 750px; } }
-@media (min-width: 992px) {
-  .container {
-    max-width: 970px; } }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px; } }
-/* Columns
-   ========================================================================== */
-/*
- * If need column example width 3 of 12 then create class col-3 max-width 25%  
- */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-
-.col,
-.row > [class^=col-] {
-  border: 1px solid rgba(86, 61, 124, 0.2);
-  /* delete */
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: .75rem 15px;
-  position: relative; }
-
-.col-1 {
-  -webkit-box-flex: 0;
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%; }
-
-header {
-  width: 100%;
-  display: block; }
-
-.mast-brand {
-  width: 100%;
-  display: block; }
-
-.mast-brand .container {
-  display: flex;
-  align-items: center;
-  height: 124px;
-  justify-content: space-between; }
-
-.brand a {
-  color: var(--base-color); }
-
-.brand a:hover,
-.brand a:active {
-  text-decoration: none; }
-
-@media (max-width: 768px) {
-  .mast-brand {
-    padding-bottom: 1.25rem; }
-
-  .mast-brand .container {
-    justify-content: center;
-    flex-direction: column; } }
-.main-menu {
-  width: 100%;
-  display: block;
-  font-size: 1rem;
-  width: 100%; }
-
-.main-menu_navbar {
-  margin-left: -15px; }
-
-.main-menu_navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center; }
-
-.main-menu_navbar ul .navbar_nav-item {
-  text-align: center; }
-
-.navbar_nav-item a {
-  display: block;
-  color: #000;
-  border: none;
-  padding: 15px; }
-
-.navbar_nav-item a:hover,
-.navbar_nav-item a:active {
-  text-decoration: none; }
-
-@media (max-width: 768px) {
-  .main-menu .container {
-    padding: 0; }
-
-  .main-menu_navbar ul {
-    flex-flow: column wrap;
-    justify-content: center;
-    justify-content: space-around; } }
+.header {
+  border-bottom: 1px solid var(--blue);
+  padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */

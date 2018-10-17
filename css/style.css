@@ -297,9 +297,6 @@ template {
 [hidden] {
   display: none; }
 
-:root {
-  --blue: #5780a8; }
-
 * {
   box-sizing: border-box; }
 
@@ -352,7 +349,7 @@ textarea:focus {
   outline: none; }
 
 .header {
-  border-bottom: 1px solid var(--blue);
+  border-bottom: 1px solid;
   padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
